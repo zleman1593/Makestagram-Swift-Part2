@@ -73,8 +73,7 @@ Yes and No. You might wonder if resetting the `image` to `nil` means that we nee
 Luckily that is not the case! Let's take a short look at the `downloadImage` method in the `Post` class:
 
     func downloadImage() {
-      image.value = Post.imageCache[self.imageFile!.name]
-
+      
       // if image is not downloaded yet, get it
       if (image.value == nil) {
 
